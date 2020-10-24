@@ -1,0 +1,61 @@
+[ {
+  "uid" : "507534f461b89a40",
+  "name" : "test_register[test1]",
+  "time" : {
+    "start" : 1603553887874,
+    "stop" : 1603553887875,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c65741d75a16f99e",
+  "name" : "test_register[test2]",
+  "time" : {
+    "start" : 1603553887879,
+    "stop" : 1603553887879,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "472847b8efc71954",
+  "name" : "test_start[http://39.98.138.157:5000/api/getuserinfo-None-{\"token\": \"$loginvar.token$\"}-get-url-17890-$.data[0]['userid']-uservar]",
+  "time" : {
+    "start" : 1603559515134,
+    "stop" : 1603559515236,
+    "duration" : 102
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a8d592a9b6f0550",
+  "name" : "test_start[http://39.98.138.157:5000/api/addcart-{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}-{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}-post-json-success-$.result-/]",
+  "time" : {
+    "start" : 1603559515257,
+    "stop" : 1603559515624,
+    "duration" : 367
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cb3f1203e7924017",
+  "name" : "test_start[http://39.98.138.157:5000/api/getproductinfo?productid=8888-None-None-get-url-8888-$.data[0]['productid']-productvar]",
+  "time" : {
+    "start" : 1603559515020,
+    "stop" : 1603559515119,
+    "duration" : 99
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "208cad2380292143",
+  "name" : "test_start[http://39.98.138.157:5000/api/login-{\"username\":\"admin\",\"password\":\"123456\"}-{\"content-type\": \"application/json\"}-post-json-success-$.msg-loginvar]",
+  "time" : {
+    "start" : 1603559514900,
+    "stop" : 1603559515001,
+    "duration" : 101
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

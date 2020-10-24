@@ -1,0 +1,74 @@
+{
+  "uid" : "887e66f64887362a",
+  "name" : "test_start[http://39.98.138.157:5000/api/getuserinfo-None-{\"token\": \"$loginvar.token$\"}-get-url-17890-$.data[0]['userid']-uservar]",
+  "fullName" : "test_start1.Test_Param#test_start[http://39.98.138.157:5000/api/getuserinfo-None-{\"token\": \"$loginvar.token$\"}-get-url-17890-$.data[0]",
+  "historyId" : "2a0cbb14f094611f67baa76cd608a429",
+  "time" : {
+    "start" : 1603381581636,
+    "stop" : 1603381581744,
+    "duration" : 108
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_start1"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Param"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-482DEKV"
+  }, {
+    "name" : "thread",
+    "value" : "6580-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_start1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "body",
+    "value" : "None"
+  }, {
+    "name" : "dependency",
+    "value" : "'uservar'"
+  }, {
+    "name" : "exceptvalue",
+    "value" : "'17890'"
+  }, {
+    "name" : "header",
+    "value" : "'{\"token\": \"$loginvar.token$\"}'"
+  }, {
+    "name" : "jsonpathvalue",
+    "value" : "'$.data[0]['userid']'"
+  }, {
+    "name" : "method",
+    "value" : "'get'"
+  }, {
+    "name" : "method_type",
+    "value" : "'url'"
+  }, {
+    "name" : "url",
+    "value" : "'http://39.98.138.157:5000/api/getuserinfo'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "887e66f64887362a.json",
+  "parameterValues" : [ "None", "'uservar'", "'17890'", "'{\"token\": \"$loginvar.token$\"}'", "'$.data[0]['userid']'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+}

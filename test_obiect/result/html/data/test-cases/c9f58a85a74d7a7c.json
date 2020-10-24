@@ -1,0 +1,65 @@
+{
+  "uid" : "c9f58a85a74d7a7c",
+  "name" : "test_register[test2]",
+  "fullName" : "test_pytestfixtureparma#test_register",
+  "historyId" : "ba9b742ba44b25561423c51b921de8e2",
+  "time" : {
+    "start" : 1603548598778,
+    "stop" : 1603548598778,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "users",
+    "time" : {
+      "start" : 1603548598778,
+      "stop" : 1603548598778,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_pytestfixtureparma"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-482DEKV"
+  }, {
+    "name" : "thread",
+    "value" : "19032-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_pytestfixtureparma"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "users",
+    "value" : "'user2'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c9f58a85a74d7a7c.json",
+  "parameterValues" : [ "'user2'" ]
+}

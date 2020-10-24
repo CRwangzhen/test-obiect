@@ -1,0 +1,89 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "test_pytestfixtureparma",
+    "children" : [ {
+      "name" : "test_register[test1]",
+      "uid" : "507534f461b89a40",
+      "parentUid" : "ecd1a2ca916592b57eaa57b15ed4ea3a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603553887874,
+        "stop" : 1603553887875,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ "'user1'" ]
+    }, {
+      "name" : "test_register[test2]",
+      "uid" : "c65741d75a16f99e",
+      "parentUid" : "ecd1a2ca916592b57eaa57b15ed4ea3a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603553887879,
+        "stop" : 1603553887879,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "'user2'" ]
+    } ],
+    "uid" : "ecd1a2ca916592b57eaa57b15ed4ea3a"
+  }, {
+    "name" : "test_start1",
+    "children" : [ {
+      "name" : "Test_Param",
+      "children" : [ {
+        "name" : "test_start[http://39.98.138.157:5000/api/login-{\"username\":\"admin\",\"password\":\"123456\"}-{\"content-type\": \"application/json\"}-post-json-success-$.msg-loginvar]",
+        "uid" : "208cad2380292143",
+        "parentUid" : "074ab52050d0af2a0557066ac7f7fe12",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603559514900,
+          "stop" : 1603559515001,
+          "duration" : 101
+        },
+        "flaky" : false,
+        "parameters" : [ "'{\"username\":\"admin\",\"password\":\"123456\"}'", "'loginvar'", "'success'", "'{\"content-type\": \"application/json\"}'", "'$.msg'", "'post'", "'json'", "'http://39.98.138.157:5000/api/login'" ]
+      }, {
+        "name" : "test_start[http://39.98.138.157:5000/api/getproductinfo?productid=8888-None-None-get-url-8888-$.data[0]['productid']-productvar]",
+        "uid" : "cb3f1203e7924017",
+        "parentUid" : "074ab52050d0af2a0557066ac7f7fe12",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603559515020,
+          "stop" : 1603559515119,
+          "duration" : 99
+        },
+        "flaky" : false,
+        "parameters" : [ "None", "'productvar'", "'8888'", "None", "'$.data[0]['productid']'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo?productid=8888'" ]
+      }, {
+        "name" : "test_start[http://39.98.138.157:5000/api/getuserinfo-None-{\"token\": \"$loginvar.token$\"}-get-url-17890-$.data[0]['userid']-uservar]",
+        "uid" : "472847b8efc71954",
+        "parentUid" : "074ab52050d0af2a0557066ac7f7fe12",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603559515134,
+          "stop" : 1603559515236,
+          "duration" : 102
+        },
+        "flaky" : false,
+        "parameters" : [ "None", "'uservar'", "'17890'", "'{\"token\": \"$loginvar.token$\"}'", "'$.data[0]['userid']'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getuserinfo'" ]
+      }, {
+        "name" : "test_start[http://39.98.138.157:5000/api/addcart-{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}-{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}-post-json-success-$.result-/]",
+        "uid" : "4a8d592a9b6f0550",
+        "parentUid" : "074ab52050d0af2a0557066ac7f7fe12",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603559515257,
+          "stop" : 1603559515624,
+          "duration" : 367
+        },
+        "flaky" : false,
+        "parameters" : [ "'{\"userid\":$uservar.data[0].userid$,\"openid\":\"$uservar.data[0].openid$\",\"productid\":$productvar.data[0].productid$}'", "'/'", "'success'", "'{\"token\": \"$loginvar.token$\",\"content-type\": \"application/json\"}'", "'$.result'", "'post'", "'json'", "'http://39.98.138.157:5000/api/addcart'" ]
+      } ],
+      "uid" : "074ab52050d0af2a0557066ac7f7fe12"
+    } ],
+    "uid" : "a0442f7dd994047932f884250c303726"
+  } ]
+}

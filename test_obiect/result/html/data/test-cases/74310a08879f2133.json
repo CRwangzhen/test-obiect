@@ -1,0 +1,74 @@
+{
+  "uid" : "74310a08879f2133",
+  "name" : "test_start[http://39.98.138.157:5000/api/getproductinfo?productid=8888-None-None-get-url-8888-$.data[0]['productid']-productvar]",
+  "fullName" : "test_start1.Test_Param#test_start[http://39.98.138.157:5000/api/getproductinfo?productid=8888-None-None-get-url-8888-$.data[0]",
+  "historyId" : "71d7168e1928e7c34084c72c6cf5e9d9",
+  "time" : {
+    "start" : 1603555083923,
+    "stop" : 1603555084017,
+    "duration" : 94
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_start1"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Param"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-482DEKV"
+  }, {
+    "name" : "thread",
+    "value" : "22276-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_start1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "body",
+    "value" : "None"
+  }, {
+    "name" : "dependency",
+    "value" : "'productvar'"
+  }, {
+    "name" : "exceptvalue",
+    "value" : "'8888'"
+  }, {
+    "name" : "header",
+    "value" : "None"
+  }, {
+    "name" : "jsonpathvalue",
+    "value" : "'$.data[0]['productid']'"
+  }, {
+    "name" : "method",
+    "value" : "'get'"
+  }, {
+    "name" : "method_type",
+    "value" : "'url'"
+  }, {
+    "name" : "url",
+    "value" : "'http://39.98.138.157:5000/api/getproductinfo?productid=8888'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "74310a08879f2133.json",
+  "parameterValues" : [ "None", "'productvar'", "'8888'", "None", "'$.data[0]['productid']'", "'get'", "'url'", "'http://39.98.138.157:5000/api/getproductinfo?productid=8888'" ]
+}

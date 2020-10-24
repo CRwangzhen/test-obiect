@@ -1,0 +1,116 @@
+2020-10-25 01:11:54s - moudler_log - 22804 - DEBUG -15: [('http://39.98.138.157:5000/api/login', '{"username":"admin","password":"123456"}', '{"content-type": "application/json"}', 'post', 'json', 'success', '$.msg', 'loginvar'), ('http://39.98.138.157:5000/api/getproductinfo?productid=8888', None, None, 'get', 'url', '8888', "$.data[0]['productid']", 'productvar'), ('http://39.98.138.157:5000/api/getuserinfo', None, '{"token": "$loginvar.token$"}', 'get', 'url', '17890', "$.data[0]['userid']", 'uservar'), ('http://39.98.138.157:5000/api/addcart', '{"userid":$uservar.data[0].userid$,"openid":"$uservar.data[0].openid$","productid":$productvar.data[0].productid$}', '{"token": "$loginvar.token$","content-type": "application/json"}', 'post', 'json', 'success', '$.result', '/')]
+2020-10-25 01:11:54s - moudler_log - 22804 - DEBUG -15: =============================================================================================
+2020-10-25 01:11:54s - moudler_log - 22804 - DEBUG -15: post
+2020-10-25 01:11:54s - moudler_log - 22804 - DEBUG -15: http://39.98.138.157:5000/api/login
+2020-10-25 01:11:54s - moudler_log - 22804 - DEBUG -15: json
+2020-10-25 01:11:54s - moudler_log - 22804 - DEBUG -15: {"username":"admin","password":"123456"}
+2020-10-25 01:11:54s - moudler_log - 22804 - DEBUG -15: {"content-type": "application/json"}
+2020-10-25 01:11:54s - moudler_log - 22804 - DEBUG -15: *********************************************************************************************
+2020-10-25 01:11:54s - moudler_log - 22804 - DEBUG -15: 开始通过参数关联,将返回数据储存在depend 
+2020-10-25 01:11:54s - moudler_log - 22804 - DEBUG -15: {'adress': {'city': 'changsha'}, 'httpstatus': 200, 'info': {'age': 18, 'name': 'admin'}, 'msg': 'success', 'token': '23657DGYUSGD126731638712GE18271H'}
+2020-10-25 01:11:54s - moudler_log - 22804 - DEBUG -15: 找出断言数据
+2020-10-25 01:11:54s - moudler_log - 22804 - DEBUG -15: {'loginvar': b'{\n  "adress": {\n    "city": "changsha"\n  }, \n  "httpstatus": 200, \n  "info": {\n    "age": 18, \n    "name": "admin"\n  }, \n  "msg": "success", \n  "token": "23657DGYUSGD126731638712GE18271H"\n}\n'}
+2020-10-25 01:11:54s - moudler_log - 22804 - DEBUG -15: 999999999999999999999999999999999999999999999999999,success
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: success
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: <class 'str'>
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: <class 'str'>
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: ///////////////////////////////////////////////////////////////////////////////////////////////////////
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: =============================================================================================
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: get
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: http://39.98.138.157:5000/api/getproductinfo?productid=8888
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: url
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: *********************************************************************************************
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: get
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过参数关联,将返回数据储存在depend 
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: {'data': [{'SKU': 'FRTSJ7676', 'price': 29.9, 'productdesc': '麒麟瓜皮薄瓜瓤嫩,就连翠衣也很清甜,瓤虽是粉红而不是深红,但甜度丝毫不减。', 'productid': 8888, 'productname': '海南麒麟瓜5斤装'}], 'httpstatus': 200}
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 找出断言数据
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: {'loginvar': b'{\n  "adress": {\n    "city": "changsha"\n  }, \n  "httpstatus": 200, \n  "info": {\n    "age": 18, \n    "name": "admin"\n  }, \n  "msg": "success", \n  "token": "23657DGYUSGD126731638712GE18271H"\n}\n', 'productvar': b'{\n  "data": [\n    {\n      "SKU": "FRTSJ7676", \n      "price": 29.9, \n      "productdesc": "\\u9e92\\u9e9f\\u74dc\\u76ae\\u8584\\u74dc\\u74e4\\u5ae9,\\u5c31\\u8fde\\u7fe0\\u8863\\u4e5f\\u5f88\\u6e05\\u751c,\\u74e4\\u867d\\u662f\\u7c89\\u7ea2\\u800c\\u4e0d\\u662f\\u6df1\\u7ea2,\\u4f46\\u751c\\u5ea6\\u4e1d\\u6beb\\u4e0d\\u51cf\\u3002", \n      "productid": 8888, \n      "productname": "\\u6d77\\u5357\\u9e92\\u9e9f\\u74dc5\\u65a4\\u88c5"\n    }\n  ], \n  "httpstatus": 200\n}\n'}
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 999999999999999999999999999999999999999999999999999,8888
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 8888
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: <class 'str'>
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: <class 'int'>
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: ///////////////////////////////////////////////////////////////////////////////////////////////////////
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过$字符分割参数：********************
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: {"token": "$loginvar.token$"}
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过奇数分割参数：{"token": "
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过奇数分割参数：loginvar.token
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过$字符分割参数：loginvar.token
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 找出depend字典里面的值的索引
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 找出depend字典里面的值的索引得值
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 8
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 找出depend字典里面的值:b'{\n  "adress": {\n    "city": "changsha"\n  }, \n  "httpstatus": 200, \n  "info": {\n    "age": 18, \n    "name": "admin"\n  }, \n  "msg": "success", \n  "token": "23657DGYUSGD126731638712GE18271H"\n}\n'
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 通过loads加载
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过奇数分割参数："}
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: =============================================================================================
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: get
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: http://39.98.138.157:5000/api/getuserinfo
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: url
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: {"token": "23657DGYUSGD126731638712GE18271H"}
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: *********************************************************************************************
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: get
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过参数关联,将返回数据储存在depend 
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: {'data': [{'nikename': '风清扬', 'openid': 'UEHUXUXU78272SDSassDD', 'userbalance': 5678.9, 'userid': 17890, 'username': 'admin', 'userpoints': 4321}], 'httpstatus': 200}
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 找出断言数据
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: {'loginvar': b'{\n  "adress": {\n    "city": "changsha"\n  }, \n  "httpstatus": 200, \n  "info": {\n    "age": 18, \n    "name": "admin"\n  }, \n  "msg": "success", \n  "token": "23657DGYUSGD126731638712GE18271H"\n}\n', 'productvar': b'{\n  "data": [\n    {\n      "SKU": "FRTSJ7676", \n      "price": 29.9, \n      "productdesc": "\\u9e92\\u9e9f\\u74dc\\u76ae\\u8584\\u74dc\\u74e4\\u5ae9,\\u5c31\\u8fde\\u7fe0\\u8863\\u4e5f\\u5f88\\u6e05\\u751c,\\u74e4\\u867d\\u662f\\u7c89\\u7ea2\\u800c\\u4e0d\\u662f\\u6df1\\u7ea2,\\u4f46\\u751c\\u5ea6\\u4e1d\\u6beb\\u4e0d\\u51cf\\u3002", \n      "productid": 8888, \n      "productname": "\\u6d77\\u5357\\u9e92\\u9e9f\\u74dc5\\u65a4\\u88c5"\n    }\n  ], \n  "httpstatus": 200\n}\n', 'uservar': b'{\n  "data": [\n    {\n      "nikename": "\\u98ce\\u6e05\\u626c", \n      "openid": "UEHUXUXU78272SDSassDD", \n      "userbalance": 5678.9, \n      "userid": 17890, \n      "username": "admin", \n      "userpoints": 4321\n    }\n  ], \n  "httpstatus": 200\n}\n'}
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 999999999999999999999999999999999999999999999999999,17890
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 17890
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: <class 'str'>
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: <class 'int'>
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: ///////////////////////////////////////////////////////////////////////////////////////////////////////
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过$字符分割参数：********************
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: {"userid":$uservar.data[0].userid$,"openid":"$uservar.data[0].openid$","productid":$productvar.data[0].productid$}
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过奇数分割参数：{"userid":
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过奇数分割参数：uservar.data[0].userid
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过$字符分割参数：uservar.data[0].userid
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 找出depend字典里面的值的索引
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 找出depend字典里面的值的索引得值
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 7
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 找出depend字典里面的值:b'{\n  "data": [\n    {\n      "nikename": "\\u98ce\\u6e05\\u626c", \n      "openid": "UEHUXUXU78272SDSassDD", \n      "userbalance": 5678.9, \n      "userid": 17890, \n      "username": "admin", \n      "userpoints": 4321\n    }\n  ], \n  "httpstatus": 200\n}\n'
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 通过loads加载
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过奇数分割参数：,"openid":"
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过奇数分割参数：uservar.data[0].openid
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过$字符分割参数：uservar.data[0].openid
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 找出depend字典里面的值的索引
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 找出depend字典里面的值的索引得值
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 7
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 找出depend字典里面的值:b'{\n  "data": [\n    {\n      "nikename": "\\u98ce\\u6e05\\u626c", \n      "openid": "UEHUXUXU78272SDSassDD", \n      "userbalance": 5678.9, \n      "userid": 17890, \n      "username": "admin", \n      "userpoints": 4321\n    }\n  ], \n  "httpstatus": 200\n}\n'
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 通过loads加载
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过奇数分割参数：","productid":
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过奇数分割参数：productvar.data[0].productid
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过$字符分割参数：productvar.data[0].productid
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 找出depend字典里面的值的索引
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 找出depend字典里面的值的索引得值
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 10
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 找出depend字典里面的值:b'{\n  "data": [\n    {\n      "SKU": "FRTSJ7676", \n      "price": 29.9, \n      "productdesc": "\\u9e92\\u9e9f\\u74dc\\u76ae\\u8584\\u74dc\\u74e4\\u5ae9,\\u5c31\\u8fde\\u7fe0\\u8863\\u4e5f\\u5f88\\u6e05\\u751c,\\u74e4\\u867d\\u662f\\u7c89\\u7ea2\\u800c\\u4e0d\\u662f\\u6df1\\u7ea2,\\u4f46\\u751c\\u5ea6\\u4e1d\\u6beb\\u4e0d\\u51cf\\u3002", \n      "productid": 8888, \n      "productname": "\\u6d77\\u5357\\u9e92\\u9e9f\\u74dc5\\u65a4\\u88c5"\n    }\n  ], \n  "httpstatus": 200\n}\n'
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 通过loads加载
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过奇数分割参数：}
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过$字符分割参数：********************
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: {"token": "$loginvar.token$","content-type": "application/json"}
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过奇数分割参数：{"token": "
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过奇数分割参数：loginvar.token
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过$字符分割参数：loginvar.token
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 找出depend字典里面的值的索引
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 找出depend字典里面的值的索引得值
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 8
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 找出depend字典里面的值:b'{\n  "adress": {\n    "city": "changsha"\n  }, \n  "httpstatus": 200, \n  "info": {\n    "age": 18, \n    "name": "admin"\n  }, \n  "msg": "success", \n  "token": "23657DGYUSGD126731638712GE18271H"\n}\n'
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 通过loads加载
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过奇数分割参数：","content-type": "application/json"}
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: =============================================================================================
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: post
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: http://39.98.138.157:5000/api/addcart
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: json
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: {"userid":17890,"openid":"UEHUXUXU78272SDSassDD","productid":8888}
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: {"token": "23657DGYUSGD126731638712GE18271H","content-type": "application/json"}
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: *********************************************************************************************
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 开始通过参数关联,将返回数据储存在depend 
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: {'data': [{'cartid': 45233, 'openid': 'UEHUXUXU78272SDSassDD', 'price': 29.9, 'productid': 8888, 'userid': 17890}], 'httpstatus': 200, 'result': 'success'}
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 找出断言数据
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: {'loginvar': b'{\n  "adress": {\n    "city": "changsha"\n  }, \n  "httpstatus": 200, \n  "info": {\n    "age": 18, \n    "name": "admin"\n  }, \n  "msg": "success", \n  "token": "23657DGYUSGD126731638712GE18271H"\n}\n', 'productvar': b'{\n  "data": [\n    {\n      "SKU": "FRTSJ7676", \n      "price": 29.9, \n      "productdesc": "\\u9e92\\u9e9f\\u74dc\\u76ae\\u8584\\u74dc\\u74e4\\u5ae9,\\u5c31\\u8fde\\u7fe0\\u8863\\u4e5f\\u5f88\\u6e05\\u751c,\\u74e4\\u867d\\u662f\\u7c89\\u7ea2\\u800c\\u4e0d\\u662f\\u6df1\\u7ea2,\\u4f46\\u751c\\u5ea6\\u4e1d\\u6beb\\u4e0d\\u51cf\\u3002", \n      "productid": 8888, \n      "productname": "\\u6d77\\u5357\\u9e92\\u9e9f\\u74dc5\\u65a4\\u88c5"\n    }\n  ], \n  "httpstatus": 200\n}\n', 'uservar': b'{\n  "data": [\n    {\n      "nikename": "\\u98ce\\u6e05\\u626c", \n      "openid": "UEHUXUXU78272SDSassDD", \n      "userbalance": 5678.9, \n      "userid": 17890, \n      "username": "admin", \n      "userpoints": 4321\n    }\n  ], \n  "httpstatus": 200\n}\n'}
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: 999999999999999999999999999999999999999999999999999,success
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: success
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: <class 'str'>
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: <class 'str'>
+2020-10-25 01:11:55s - moudler_log - 22804 - DEBUG -15: ///////////////////////////////////////////////////////////////////////////////////////////////////////
